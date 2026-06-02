@@ -10,6 +10,7 @@ import {
 } from '~/shared/fetchers';
 import { motion } from 'framer-motion';
 import Clock from '~/components/home/clock/Clock';
+import SummerScreen from '~/components/global/SummerScreen';
 import LunchWidget from '~/components/home/widgets/LunchWidget';
 import SportsResultsWidget from '~/components/home/widgets/SportsResultsWidget';
 import WidgetContainer from '~/components/home/widgets/WidgetContainer';
@@ -137,6 +138,11 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <main style={styles.main}>
             <h1 style={styles.hiddenHeading}>RL Clock Dashboard</h1>
 
+            <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+              <SummerScreen isMobile={isMobile} isDark={isDark} />
+            </div>
+
+            {/*
             <div style={styles.section}>
               <Clock isMobile={isMobile} schedule={schedule} isDark={isDark} />
             </div>
@@ -153,6 +159,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 isMobile={isMobile}
               />
             </WidgetContainer>
+            */}
           </main>
 
           <div style={styles.footer}>
