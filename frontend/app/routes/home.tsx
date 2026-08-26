@@ -138,11 +138,11 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <main style={styles.main}>
             <h1 style={styles.hiddenHeading}>RL Clock Dashboard</h1>
 
-            <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+            {/* <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
               <SummerScreen isMobile={isMobile} isDark={isDark} />
-            </div>
+            </div> */}
 
-            {/*
+            
             <div style={styles.section}>
               <Clock isMobile={isMobile} schedule={schedule} isDark={isDark} />
             </div>
@@ -159,7 +159,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
                 isMobile={isMobile}
               />
             </WidgetContainer>
-            */}
+            
           </main>
 
           <div style={styles.footer}>
